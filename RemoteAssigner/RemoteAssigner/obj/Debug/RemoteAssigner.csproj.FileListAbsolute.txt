@@ -1,0 +1,9 @@
+C:\Users\sanat\Documents\Github\RemoteUtilities\RemoteAssigner\RemoteAssigner\obj\Debug\RemoteAssigner.csprojAssemblyReference.cache
+C:\Users\sanat\Documents\Github\RemoteUtilities\RemoteAssigner\RemoteAssigner\obj\Debug\RemoteAssigner.Properties.Resources.resources
+C:\Users\sanat\Documents\Github\RemoteUtilities\RemoteAssigner\RemoteAssigner\obj\Debug\RemoteAssigner.csproj.GenerateResource.cache
+C:\Users\sanat\Documents\Github\RemoteUtilities\RemoteAssigner\RemoteAssigner\obj\Debug\RemoteAssigner.csproj.CoreCompileInputs.cache
+C:\Users\sanat\Documents\Github\RemoteUtilities\RemoteAssigner\RemoteAssigner\bin\Debug\RemoteAssigner.exe.config
+C:\Users\sanat\Documents\Github\RemoteUtilities\RemoteAssigner\RemoteAssigner\bin\Debug\RemoteAssigner.exe
+C:\Users\sanat\Documents\Github\RemoteUtilities\RemoteAssigner\RemoteAssigner\bin\Debug\RemoteAssigner.pdb
+C:\Users\sanat\Documents\Github\RemoteUtilities\RemoteAssigner\RemoteAssigner\obj\Debug\RemoteAssigner.exe
+C:\Users\sanat\Documents\Github\RemoteUtilities\RemoteAssigner\RemoteAssigner\obj\Debug\RemoteAssigner.pdb
