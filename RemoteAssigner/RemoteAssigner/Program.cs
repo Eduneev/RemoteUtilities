@@ -18,5 +18,7 @@ namespace RemoteAssigner
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
         }
+        //TextBox tbx = this.Controls.Find("textBox1", true).FirstOrDefault() as TextBox;
+        //tbx.Text = "found!";
     }
 }

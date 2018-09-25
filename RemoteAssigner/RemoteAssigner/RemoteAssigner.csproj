@@ -64,6 +64,9 @@
     <Compile Include="rf21x-csharp\rf21xPINVOKE.cs" />
     <Compile Include="rf21x-csharp\SWIGTYPE_p_std__string.cs" />
     <Compile Include="rf21x-csharp\SWIGTYPE_p_void.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
