@@ -1,0 +1,10 @@
+C:\Users\sanat\Documents\Github\RemoteUtilities\RemoteTester\bin\Debug\RemoteTester.exe.config
+C:\Users\sanat\Documents\Github\RemoteUtilities\RemoteTester\bin\Debug\RemoteTester.exe
+C:\Users\sanat\Documents\Github\RemoteUtilities\RemoteTester\bin\Debug\RemoteTester.pdb
+C:\Users\sanat\Documents\Github\RemoteUtilities\RemoteTester\obj\Debug\RemoteTester.csprojAssemblyReference.cache
+C:\Users\sanat\Documents\Github\RemoteUtilities\RemoteTester\obj\Debug\RemoteTester.Form1.resources
+C:\Users\sanat\Documents\Github\RemoteUtilities\RemoteTester\obj\Debug\RemoteTester.Properties.Resources.resources
+C:\Users\sanat\Documents\Github\RemoteUtilities\RemoteTester\obj\Debug\RemoteTester.csproj.GenerateResource.cache
+C:\Users\sanat\Documents\Github\RemoteUtilities\RemoteTester\obj\Debug\RemoteTester.csproj.CoreCompileInputs.cache
+C:\Users\sanat\Documents\Github\RemoteUtilities\RemoteTester\obj\Debug\RemoteTester.exe
+C:\Users\sanat\Documents\Github\RemoteUtilities\RemoteTester\obj\Debug\RemoteTester.pdb
