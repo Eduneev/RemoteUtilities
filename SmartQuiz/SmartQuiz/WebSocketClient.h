@@ -9,7 +9,7 @@ extern int Q_ID;
 extern int RRQ_ID;
 using json = nlohmann::json;
 void COutputLogger(const char* txt);
-int startsocket(int session_id);
+int startsocket(int session_id, CWnd* connect_label);
 
 enum Events { CONNECTION, MESSAGE, DISCONNECTION, CLOSE };
 enum Profile { RRQ };
