@@ -1,0 +1,60 @@
+1
+1
+1
+1
+1
+1
+1
+4
+SESSION ID Retrieved
+4
+1
+4
+SESSION ID Retrieved
+4
+1
+4
+SESSION ID Retrieved
+4
+1
+4
+SESSION ID Retrieved
+4
+ments 
+Initialization ERROR!
+1
+4
+SESSION ID Retrieved
+4
+ments 
+Initialization for quiz is complete
+Connected!
+1
+4
+SESSION ID Retrieved
+4
+Inside Websocket Handler
+ments 
+Initialization ERROR!
+1
+4
+SESSION ID Retrieved
+4
+Inside Websocket Handler
+ments 
+Initialization ERROR!
+1
+4
+SESSION ID Retrieved
+4
+Inside Websocket Handler
+ments 
+Initialization ERROR!
+1
+4
+SESSION ID Retrieved
+4
+Inside Websocket Handler
+ments 
+Initialization for quiz is complete
+Connected!
