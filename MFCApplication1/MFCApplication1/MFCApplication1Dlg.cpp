@@ -7,6 +7,8 @@
 #include "MFCApplication1Dlg.h"
 #include "afxdialogex.h"
 #include <fstream>
+#include "Rest.h"
+#include "WebSocketClient.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -106,6 +108,11 @@ BOOL CMFCApplication1Dlg::OnInitDialog()
 
 	// TODO: Add extra initialization here
 
+	atexit([]() {
+		std::terminate();
+	});
+
+
 	return TRUE;  // return TRUE  unless you set the focus to a control
 }
 
@@ -166,12 +173,6 @@ void CAboutDlg::OnBnClickedOk()
 	CDialogEx::OnOK();
 }
 
-void COutputLogger(const char* txt)
-{
-	std::ofstream log("output.txt", std::ios_base::app | std::ios_base::out);
-	log << txt << std::endl;
-}
-
 
 void CMFCApplication1Dlg::OnBnClickedOk()
 {
@@ -184,4 +185,22 @@ void CMFCApplication1Dlg::OnBnClickedOk()
 	std::wstring s = val.GetString();
 	string var = string(s.begin(), s.end());
 	COutputLogger(var.c_str());
+
+	try
+	{
+		int rrq_id = atoi(var.c_str());
+		int session_id = Rest::getSessionForRRQ(rrq_id);
+		if (session_id == -1)
+			MessageBox(_T("Server Connection Went Wrong. Reenter RRQID"));
+
+		COutputLogger("Inside Websocket Handler");
+		auto t = concurrency::create_task([&]()
+		{
+			startsocket(session_id);
+		});
+	}
+	catch (exception e)
+	{
+		MessageBox(_T("Something went wrong. Restart"));
+	}
 }
