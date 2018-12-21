@@ -10,6 +10,8 @@ namespace Rest
 	using namespace web::http;
 	int getRRQ(int session);
 
+	int getSessionForRRQ(int rrq_id);
+
 	//("api/{sessionId:int}/{rrqId:int}/saveRRQResponse/{QId:int}/{remoteId}/{response}")
 	bool postResponse(int remoteId, const char* data);
 
