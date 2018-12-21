@@ -58,3 +58,55 @@ Inside Websocket Handler
 ments 
 Initialization for quiz is complete
 Connected!
+1
+4
+SESSION ID Retrieved
+4
+Inside Websocket Handler
+ments 
+Initialization ERROR!
+FAILURE: could not connect to websocket server
+Closing program
+1
+4
+SESSION ID Retrieved
+4
+Inside Websocket Handler
+ments 
+Initialization for quiz is complete
+FAILURE: could not connect to websocket server
+Closing program
+1
+4
+SESSION ID Retrieved
+4
+Inside Websocket Handler
+ments 
+Initialization for quiz is complete
+FAILURE: could not connect to websocket server
+Closing program
+1
+4
+SESSION ID Retrieved
+4
+Inside Websocket Handler
+ments 
+Initialization for quiz is complete
+Connected!
+1
+4
+SESSION ID Retrieved
+4
+Inside Websocket Handler
+ments 
+Initialization for quiz is complete
+FAILURE: could not connect to websocket server
+Closing program
+1
+4
+SESSION ID Retrieved
+4
+Inside Websocket Handler
+ments 
+Initialization for quiz is complete
+Connected!

@@ -34,4 +34,5 @@ protected:
 public:
 	afx_msg void OnBnClickedOk();
 	CEdit m_editctrl;
+	CWnd *connect_label;
 };

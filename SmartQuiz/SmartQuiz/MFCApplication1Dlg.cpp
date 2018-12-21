@@ -108,6 +108,8 @@ BOOL CMFCApplication1Dlg::OnInitDialog()
 
 	// TODO: Add extra initialization here
 
+	CMFCApplication1Dlg::connect_label = GetDlgItem(IDC_STATIC_CONNECT);
+
 	atexit([]() {
 		std::terminate();
 	});
@@ -196,7 +198,7 @@ void CMFCApplication1Dlg::OnBnClickedOk()
 		COutputLogger("Inside Websocket Handler");
 		auto t = concurrency::create_task([&]()
 		{
-			startsocket(session_id);
+			startsocket(session_id, connect_label);
 		});
 	}
 	catch (exception e)
