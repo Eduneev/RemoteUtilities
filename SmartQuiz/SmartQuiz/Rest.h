@@ -13,6 +13,6 @@ namespace Rest
 	int getSessionForRRQ(int rrq_id);
 
 	//("api/{sessionId:int}/{rrqId:int}/saveRRQResponse/{QId:int}/{remoteId}/{response}")
-	bool postResponse(int remoteId, const char* data);
+	bool postResponse(std::string remoteId, const char* data);
 
 };

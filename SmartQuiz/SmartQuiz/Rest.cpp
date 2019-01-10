@@ -55,9 +55,9 @@ int Rest::getSessionForRRQ(int rrq_id)
 }
 
 //("api/{sessionId:int}/{rrqId:int}/saveRRQResponse/{QId:int}/{remoteId}/{response}")
-bool Rest::postResponse(int remoteId, const char * data)
+bool Rest::postResponse(std::string remoteId, const char * data)
 {
-	std::string posturl = base_url + std::to_string(SESSION) + "/" + std::to_string(RRQ_ID)+  "/saveRRQResponse/" + std::to_string(Q_ID) + "/" + std::to_string(remoteId) + "/" + data;
+	std::string posturl = base_url + std::to_string(SESSION) + "/" + std::to_string(RRQ_ID)+  "/saveRRQResponse/" + std::to_string(Q_ID) + "/" + remoteId + "/" + data;
 
 	uri* url = new uri(Utilities::convertToWString(posturl).c_str());
 	std::string val = Utilities::HTTPStreamingAsync(url).get();
