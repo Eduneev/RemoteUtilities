@@ -2,7 +2,7 @@
 #include "Rest.h"
 #include "WebSocketClient.h"
 
-std::string base_url = "http://localhost:55082/api/";
+std::string base_url = "http://twowaylive.us-east-2.elasticbeanstalk.com:55082/api/";
 
 int Rest::getRRQ(int session)
 {
