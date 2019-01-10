@@ -6,16 +6,20 @@
 
 #define RF21X_SLEEP(n) (Sleep(n))
 
-char *buf;
 rf21x_Device rf21x = NULL;
-rf21x_Message message = NULL;
+rf21x_Message message = rf21x_createMessageBuffer();
+std::string receiver;
 
 int Quiz::startUp() {
 
 	int i = 0;
+	char buf[100];
 	while (rf21x_getHidSerialNumber(i, buf, sizeof(buf)))
 	{
 		printf("HID Device %d: %s\n", i, buf);
+		COutputLogger("HID Device");
+		COutputLogger(buf);
+		receiver = std::string(buf);
 		++i;
 	}
 	printf("Finish listing all current HID device.\n");
@@ -45,6 +49,7 @@ int Quiz::startUp() {
 
 int Quiz::quiz_start() {
 
+	message = rf21x_createMessageBuffer();
 	if (rf21x_startQuiz(rf21x, RF21X_QT_Single))
 	{
 		printf("Success to start a quiz.\n");
@@ -58,9 +63,6 @@ int Quiz::quiz_start() {
 }
 
 int Quiz::quiz_poll(int attendance) {
-
-	message = rf21x_createMessageBuffer();
-
 	if (rf21x_getMessage(rf21x, message))
 	{
 		if (attendance) {
@@ -87,10 +89,11 @@ int Quiz::quiz_poll(int attendance) {
 				if (quizNumber <= 0)
 				{
 					printf("Student %d for current question: %s\n", keypadId, data);
+					std::string s = std::to_string(keypadId) + "-" + receiver;
 					//sql_send_data("RF123", keypadId, 1, data);
-					if (!Rest::postResponse(keypadId, data))
+					if (!Rest::postResponse(s, data))
 					{
-						throw("Quiz data could not be sent to server!"); // SHOULD THIS BE CHANGED SO APPLICATION DOESN'T BREAK
+						//throw("Quiz data could not be sent to server!"); // SHOULD THIS BE CHANGED SO APPLICATION DOESN'T BREAK
 					}
 				}
 				else
@@ -114,7 +117,13 @@ int Quiz::quiz_poll(int attendance) {
 }
 
 int Quiz::quiz_stop() {
-	rf21x_destoryMessageBuffer(message);
+	try {
+		rf21x_destoryMessageBuffer(message);
+	}
+	catch (std::exception e){
+
+	}
+
 	printf("Success Stop quiz and close device.\n");
 	if (rf21x_stopQuiz(rf21x)) {
 		printf("Successfully closed quiz!\n");
