@@ -39,14 +39,14 @@ namespace RemoteTester
             rf = new RF21xDevice();
             message = new RF21xMessage();
 
-            comboBoxDevice.SelectedIndex = 0;
+            //comboBoxDevice.SelectedIndex = 0;
             ClearInfo();
         }
 
         private void buttonConnect_Click(object sender, EventArgs e)
         {
             ClearInfo();
-
+            /*
             switch (comboBoxDevice.SelectedIndex)
             {
                 case 0: //rf217
@@ -70,6 +70,8 @@ namespace RemoteTester
                         break;
                     }
             }
+            */
+            DeviceType = rf21x.RF21X_DT_RF219;
 
             if (rf.open(DeviceType, "hid://", minId, maxId))
             {

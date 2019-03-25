@@ -72,7 +72,7 @@
             this.id3 = new System.Windows.Forms.TextBox();
             this.id2 = new System.Windows.Forms.TextBox();
             this.id1 = new System.Windows.Forms.TextBox();
-            this.comboBoxDevice = new System.Windows.Forms.ComboBox();
+            this.comboBoxDevice = new System.Windows.Forms.Label();
             this.labelDeviceType = new System.Windows.Forms.Label();
             this.buttonConnect = new System.Windows.Forms.Button();
             this.buttonDisconnect = new System.Windows.Forms.Button();
@@ -618,12 +618,13 @@
             // 
             // comboBoxDevice
             // 
-            this.comboBoxDevice.FormattingEnabled = true;
-            this.comboBoxDevice.Items.AddRange(new object[] {
-            "rf217",
-            "rf218",
-            "rf219",
-            "rf215"});
+            //this.comboBoxDevice.FormattingEnabled = true;
+            //this.comboBoxDevice.Items.AddRange(new object[] {
+            //"rf217",
+            //"rf218",
+            //"rf219",
+            //"rf215"});
+            this.comboBoxDevice.Text = "2WayLive";
             this.comboBoxDevice.Location = new System.Drawing.Point(146, 224);
             this.comboBoxDevice.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBoxDevice.Name = "comboBoxDevice";
@@ -757,7 +758,7 @@
         private System.Windows.Forms.TextBox id3;
         private System.Windows.Forms.TextBox id2;
         private System.Windows.Forms.TextBox id1;
-        private System.Windows.Forms.ComboBox comboBoxDevice;
+        private System.Windows.Forms.Label comboBoxDevice;
         private System.Windows.Forms.Label labelDeviceType;
         private System.Windows.Forms.Button buttonConnect;
         private System.Windows.Forms.Button buttonDisconnect;
