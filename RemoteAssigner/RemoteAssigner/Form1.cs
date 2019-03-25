@@ -40,7 +40,7 @@ namespace RemoteAssigner
             message = new RF21xMessage();
 
             comboBoxComNo.SelectedItem = "Hid";
-            comboBoxDevice.SelectedIndex = 0;
+            //comboBoxDevice.SelectedIndex = 0;
             ClearInfo();
         }
 
@@ -64,6 +64,7 @@ namespace RemoteAssigner
             }
 
             ComNo = Convert.ToByte(comboBoxComNo.SelectedIndex);
+            /*
             switch (comboBoxDevice.SelectedIndex)
             {
                 case 0: //rf217
@@ -86,7 +87,8 @@ namespace RemoteAssigner
                         DeviceType = rf21x.RF21X_DT_RF215;
                         break;
                     }
-            }
+            }*/
+            DeviceType = rf21x.RF21X_DT_RF219;
 
             if (ComNo > 0)
             {

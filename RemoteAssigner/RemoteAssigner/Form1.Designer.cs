@@ -28,7 +28,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.comboBoxDevice = new System.Windows.Forms.ComboBox();
+            this.comboBoxDevice = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.comboBoxComNo = new System.Windows.Forms.ComboBox();
@@ -81,12 +81,14 @@
             // 
             // comboBoxDevice
             // 
-            this.comboBoxDevice.FormattingEnabled = true;
-            this.comboBoxDevice.Items.AddRange(new object[] {
+            //this.comboBoxDevice.FormattingEnabled = true;
+            /*this.comboBoxDevice.Items.AddRange(new object[] {
         "rf217",
         "rf218",
         "rf219",
-        "rf215"});
+        "rf215"});*/
+            this.comboBoxDevice.Text = "2WayLive Receiver";
+            this.comboBoxDevice.AutoSize = true;
             this.comboBoxDevice.Location = new System.Drawing.Point(165, 29);
             this.comboBoxDevice.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBoxDevice.Name = "comboBoxDevice";
@@ -386,7 +388,7 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.ComboBox comboBoxDevice;
+        private System.Windows.Forms.Label comboBoxDevice;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox comboBoxComNo;
