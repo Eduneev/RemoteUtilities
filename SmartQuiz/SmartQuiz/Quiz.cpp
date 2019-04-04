@@ -28,7 +28,7 @@ int Quiz::startUp() {
 	rf21x_getHidTempPath(0, tempPath, sizeof(tempPath));
 
 	// create a device of type rf217
-	rf21x = rf21x_createDevice(RF21X_DT_RF219);
+	rf21x = rf21x_createDevice(RF21X_DT_RF217);
 
 	if (rf21x == NULL)
 	{

@@ -1,112 +1,46 @@
-1
-1
-1
-1
-1
-1
-1
+8
+8
+8
+8
+URL IS: 
+http://twowaylive.us-east-2.elasticbeanstalk.com:55082/api//getSessionForRRQ/8
+8
+URL IS: 
+http://twowaylive.us-east-2.elasticbeanstalk.com:55082/api/getSessionForRRQ/8
+8
+URL IS: 
+http://twowaylive.us-east-2.elasticbeanstalk.com:55082/api/GetSessionForRRQ/8
+8
+URL IS: 
+http://twowaylive.us-east-2.elasticbeanstalk.com/api/GetSessionForRRQ/8
 4
 SESSION ID Retrieved
 4
-1
-4
-SESSION ID Retrieved
-4
-1
-4
-SESSION ID Retrieved
-4
-1
-4
-SESSION ID Retrieved
-4
+Inside Websocket Handler
 ments 
-Initialization ERROR!
-1
-4
-SESSION ID Retrieved
-4
-ments 
+HID Device
+0059C598
 Initialization for quiz is complete
 Connected!
-1
+Message received from server!
+{"profile":"rrq","action":"Connection"}
+Message received from server!
+{"profile":"rrq","type":"Message","action":"start","RrqID":"8","qID":32}
+Time to start quiz
+Message received from server!
+{"profile":"rrq","type":"Message","action":"stop","RrqID":"8","qID":32}
+Stop quiz
+6
+URL IS: 
+http://twowaylive.us-east-2.elasticbeanstalk.com/api/GetSessionForRRQ/6
 4
 SESSION ID Retrieved
 4
 Inside Websocket Handler
 ments 
-Initialization ERROR!
-1
-4
-SESSION ID Retrieved
-4
-Inside Websocket Handler
-ments 
-Initialization ERROR!
-1
-4
-SESSION ID Retrieved
-4
-Inside Websocket Handler
-ments 
-Initialization ERROR!
-1
-4
-SESSION ID Retrieved
-4
-Inside Websocket Handler
-ments 
+HID Device
+005FBD09
 Initialization for quiz is complete
 Connected!
-1
-4
-SESSION ID Retrieved
-4
-Inside Websocket Handler
-ments 
-Initialization ERROR!
-FAILURE: could not connect to websocket server
-Closing program
-1
-4
-SESSION ID Retrieved
-4
-Inside Websocket Handler
-ments 
-Initialization for quiz is complete
-FAILURE: could not connect to websocket server
-Closing program
-1
-4
-SESSION ID Retrieved
-4
-Inside Websocket Handler
-ments 
-Initialization for quiz is complete
-FAILURE: could not connect to websocket server
-Closing program
-1
-4
-SESSION ID Retrieved
-4
-Inside Websocket Handler
-ments 
-Initialization for quiz is complete
-Connected!
-1
-4
-SESSION ID Retrieved
-4
-Inside Websocket Handler
-ments 
-Initialization for quiz is complete
-FAILURE: could not connect to websocket server
-Closing program
-1
-4
-SESSION ID Retrieved
-4
-Inside Websocket Handler
-ments 
-Initialization for quiz is complete
-Connected!
+Message received from server!
+{"profile":"rrq","action":"Connection"}
