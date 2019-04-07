@@ -26,7 +26,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.comboBoxDevice = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -53,6 +52,7 @@
             this.buttonStop = new System.Windows.Forms.Button();
             this.buttonActivate = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -81,19 +81,13 @@
             // 
             // comboBoxDevice
             // 
-            //this.comboBoxDevice.FormattingEnabled = true;
-            /*this.comboBoxDevice.Items.AddRange(new object[] {
-        "rf217",
-        "rf218",
-        "rf219",
-        "rf215"});*/
-            this.comboBoxDevice.Text = "2WayLive Receiver";
             this.comboBoxDevice.AutoSize = true;
             this.comboBoxDevice.Location = new System.Drawing.Point(165, 29);
             this.comboBoxDevice.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBoxDevice.Name = "comboBoxDevice";
-            this.comboBoxDevice.Size = new System.Drawing.Size(93, 28);
+            this.comboBoxDevice.Size = new System.Drawing.Size(143, 20);
             this.comboBoxDevice.TabIndex = 27;
+            this.comboBoxDevice.Text = "2WayLive Receiver";
             // 
             // label14
             // 
@@ -121,7 +115,7 @@
             this.comboBoxComNo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxComNo.FormattingEnabled = true;
             this.comboBoxComNo.Items.AddRange(new object[] {
-        "Hid"});
+            "Hid"});
             this.comboBoxComNo.Location = new System.Drawing.Point(171, 106);
             this.comboBoxComNo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBoxComNo.Name = "comboBoxComNo";
@@ -190,6 +184,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.label1);
             this.groupBox3.Controls.Add(this.txtID);
             this.groupBox3.Controls.Add(this.buttonIdSet);
             this.groupBox3.Location = new System.Drawing.Point(18, 272);
@@ -358,6 +353,18 @@
             this.timer1.Interval = 20;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.label1.Location = new System.Drawing.Point(13, 106);
+            this.label1.MaximumSize = new System.Drawing.Size(350, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(348, 40);
+            this.label1.TabIndex = 29;
+            this.label1.Text = "Press Rush+B button together, till Remote gives Yellow light";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -372,7 +379,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Eduneev Keypad Utility";
+            this.Text = "Remote Assigner Utility";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
@@ -413,6 +420,7 @@
         private System.Windows.Forms.Button buttonStop;
         private System.Windows.Forms.Button buttonActivate;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label1;
     }
 }
 
