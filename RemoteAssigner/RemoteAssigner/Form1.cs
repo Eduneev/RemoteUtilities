@@ -88,7 +88,7 @@ namespace RemoteAssigner
                         break;
                     }
             }*/
-            DeviceType = rf21x.RF21X_DT_RF219;
+            DeviceType = rf21x.RF21X_DT_RF217;
 
             if (ComNo > 0)
             {
