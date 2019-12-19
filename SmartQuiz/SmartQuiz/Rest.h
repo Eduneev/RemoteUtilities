@@ -15,4 +15,6 @@ namespace Rest
 	//("api/{sessionId:int}/{rrqId:int}/saveRRQResponse/{QId:int}/{remoteId}/{response}")
 	bool postResponse(std::string remoteId, const char* data);
 
+	std::string getServerUrl(int session);
+
 };

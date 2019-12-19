@@ -2,7 +2,7 @@
 #include "Rest.h"
 #include "WebSocketClient.h"
 
-std::string base_url = "http://twowaylive.us-east-2.elasticbeanstalk.com/api/";
+std::string base_url = "http://portal.2waylive.com/api/";
 
 int Rest::getRRQ(int session)
 {
@@ -28,6 +28,29 @@ int Rest::getRRQ(int session)
 	return int(rrq_id);
 }
 
+
+//("api/GetRRQServer/{SessionID:int}")
+std::string Rest::getServerUrl(int session)
+{
+	std::string connectUrl = base_url + "GetRRQServer/" + std::to_string(session);
+	COutputLogger("URL Is: ");
+	COutputLogger(connectUrl.c_str());
+
+	uri* url = new uri(Utilities::convertToWString(connectUrl).c_str());
+	std::string val = std::string(Utilities::HTTPStreamingAsync(url).get());
+
+	if (!Utilities::IsJson(val))
+		throw std::exception("Call to server unsuccessful!");
+
+	val = val.substr(1, val.length() - 2);
+
+	COutputLogger("Server Url Retrieved");
+	COutputLogger(val.c_str());
+
+	return val;
+}
+
+//("api/GetSessionForRRQ/{RRQID:int}")
 int Rest::getSessionForRRQ(int rrq_id)
 {
 	std::string rrqUrl = base_url + "GetSessionForRRQ/" + std::to_string(rrq_id);
